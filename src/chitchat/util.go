@@ -1,6 +1,7 @@
 package main
 
 import (
+	"chitchat/data"
 	"errors"
 	"fmt"
 	"html/template"
