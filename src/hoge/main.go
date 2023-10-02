@@ -12,5 +12,6 @@ func main() {
 	http.HandleFunc("/body", pkg.Body)
 	http.HandleFunc("/set_cookie", pkg.SetCookie)
 	http.HandleFunc("/get_cookie", pkg.GetCookie)
+	http.HandleFunc("/week", pkg.Week)
 	server.ListenAndServe()
 }
