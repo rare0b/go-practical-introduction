@@ -1,2 +1,4 @@
 .idea
 clone/
+bin/
+pkg/

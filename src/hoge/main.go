@@ -10,8 +10,9 @@ func main() {
 		Addr: "127.0.0.1:8080",
 	}
 	http.HandleFunc("/body", pkg.Body)
-	http.HandleFunc("/set_cookie", pkg.SetCookie)
-	http.HandleFunc("/get_cookie", pkg.GetCookie)
+	http.HandleFunc("/set-cookie", pkg.SetCookie)
+	http.HandleFunc("/get-cookie", pkg.GetCookie)
 	http.HandleFunc("/week", pkg.Week)
+	http.HandleFunc("/map-week", pkg.MapWeek)
 	server.ListenAndServe()
 }
